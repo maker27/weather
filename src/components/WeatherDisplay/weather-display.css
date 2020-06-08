@@ -1,0 +1,7 @@
+.card::after{
+  content: attr(data-city);
+  display: block;
+  text-align: right;
+  color: gray;
+  padding-right: 1em;
+}

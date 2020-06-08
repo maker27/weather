@@ -28,7 +28,7 @@ export default class WeatherDisplay extends Component {
 		if (!weatherData) return <LoadingIndicator/>;
 
 		const weather = weatherData.weather[0];
-		const iconUrl = "http://openweathermap.org/img/w/" + weather.icon + ".png";
+		const iconUrl = "https://openweathermap.org/img/w/" + weather.icon + ".png";
 		const todayTemp = weatherData.main.temp_min === weatherData.main.temp_max
 			? weatherData.main.temp_min
 			: weatherData.main.temp_min + ' - ' + weatherData.main.temp_max;
